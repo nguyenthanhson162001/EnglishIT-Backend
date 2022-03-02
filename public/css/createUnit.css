@@ -1,0 +1,189 @@
+.create-unit {
+    padding: 40px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-left a{
+    color: #fff;
+}
+.create-unit .container {
+    width: 85%;
+}
+.create-unit  .lable{
+    margin-bottom: 30px;
+}
+
+.create-unit .form-unit-name {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.create-unit .form-unit-name .message-unit {
+    text-align: center;
+    width: 70%;
+    color: #666;
+}
+
+.create-unit .form-input-unit {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+
+}
+
+.create-unit .form-input-unit label {
+    white-space: nowrap;
+    font-weight: bold;
+    margin: 0 20px 0 0;
+    color: rgba(0, 0, 0, 0.767);
+}
+.create-unit .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    text-align: center;
+}
+.create-unit .form-unit{
+    flex: 50%;
+}
+.create-unit .form-input-unit input , .form-input-unit textarea {
+    width: 100% !important;
+    margin-right: 10px;
+    border: none;
+    height: 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    padding-left: 10px;
+    color: rgba(0, 0, 0, 0.918);
+  
+}
+.create-unit .form-input-unit textarea {
+    height: 50px;
+}
+.create-unit .form-unit .message-unit {
+    color: red;
+    text-align:  center;
+   
+}
+
+.create-unit .input:focus-visible {
+    outline: none;
+    border: 2px solid rgba(26, 233, 78, 0.4) !important;
+    /* box-shadow: 1px 0px 5px rgba(26, 219, 233, 0.281); */
+    box-shadow: 1px 0px 5px rgba(26, 233, 95, 0.281);
+}
+
+.create-unit .input-fail {
+    border: 2px solid rgba(255, 12, 12, 0.4) !important;
+    box-shadow: 1px 0px 5px rgba(233, 26, 26, 0.281);
+}
+
+.create-unit .form-fail {
+    border: 1px solid rgba(255, 12, 12, 0.741) !important;
+    box-shadow: 1px 0px 5px rgba(233, 26, 26, 0.281);
+}
+
+.create-unit .icont-success {
+    color: rgb(40, 167, 69);
+    text-shadow: 1px 1px 1px rgba(172, 253, 179, 0.9);
+}
+
+.create-unit .form-input-unit .icont-fail {
+    color: rgb(255, 0, 0);
+    text-shadow: 1px 1px 1px rgba(240, 178, 167, 0.9);
+}
+
+.create-unit .form-input .input {
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.0);
+    padding: 8px;
+    font-size: 14px;
+}
+
+.create-unit .container table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.create-unit .container tr {
+    margin-top: 5px;
+}
+
+.create-unit .container .index {
+    width: 50px;
+    text-align: center;
+}
+
+.create-unit .container th {
+    background-color: rgb(82, 185, 82);
+    text-align: center;
+    padding: 8px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.959);
+    border-radius: 15px 2px 15px 2px;
+}
+
+.create-unit .container td {
+    background-color: white;
+    border: 1px solid #dddddd;
+    text-align: left;
+    font-size: 14px;
+    position: relative;
+}
+
+.create-unit .container .remove-row {
+    position: absolute;
+    top: 25%;
+}
+
+.create-unit .container .remove-row {
+    display: none;
+    background-color: rgba(0, 0, 0, 0) !important;
+    text-align: center;
+    color: rgb(241, 57, 57);
+    padding-left: 5px;
+    border: 1px solid #dddddd28;
+}
+
+.create-unit .container .remove-row:hover {
+    color: rgb(255, 0, 0);
+}
+
+.create-unit .container .btn {
+    margin-top: 15px;
+    border-radius: 8px;
+    padding: 6px 30px;
+    font-size: 15px;
+}
+.create-unit .container .btn-add-row {
+    color: rgb(35, 173, 0);
+    border: 1px solid rgb(43, 214, 0);
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 0px 5px rgba(43, 214, 0, 0.4);
+}
+
+.create-unit .container  .btn:hover {
+    box-shadow: 1px 0px 5px rgba(43, 214, 0, 0);
+}
+
+.container tr:nth-child(even) .input {
+    background-color: #dddddd57;
+}
+
+.container tr:nth-child(even) td {
+    background-color: #dddddd57;
+}
+
+.create-unit .btn-finish {
+    color: rgb(255, 255, 255);
+    background-color: #007bff;
+    box-shadow: 1px 0px 5px #007bff69;
+    border: 1px solid #007bff;
+}
+
+.create-unit .btn-finish:hover {
+    box-shadow: 1px 0px 5px #007bff0e;
+}

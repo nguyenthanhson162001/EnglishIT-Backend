@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/createUnit.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+</head>
+<header>
+    <div class="header-left">
+        <a href="/" class="logo"><i class="fad fa-globe-asia"> </i> English IT</a>
+    </div>
+    <div class="header-right default  nav nav-info-user">
+        <div class=""><a id="btn-login" disabled="true" onclick="login()">Login</a></div>
+        <!-- <a id="btn-logout" disabled="true" onclick="logout()">Log out</a> -->
+    </div>
+    <div class="header-right logged nav">
+        <!-- <div class="avatar">
+            <img src="./image//me1.jpg" alt="">
+        </div>
+        <div class="border-right "><a class="name">Sơn nguyễn </a> </div>
+        <a><i class="fad fa-clipboard-list"></i></a>
+        <a><i class="fad fa-bell"></i></a>
+        <a><i class="fad fa-angle-down"></i></a> -->
+    </div>
+</header>
+
+<body>
+
+    <div class="create-unit">
+        <h2 class="lable"> Create Unit</h2>
+        <div class="container">
+            <div>
+                <div class="row">
+                    <div class="form-unit">
+                        <div class="form-input-unit">
+                            <label for="unit-name">Unit Name: </label>
+                            <input type="text" id='unit-name' class="input">
+                            <i class=" icon-unit" id='icon-status-name-unit'></i>
+                        </div>
+                        <!-- icont-success fas fa-check-circle -->
+                        <!-- <i class="icont-fail  fal fa-times-octagon"></i> -->
+                        <div class="message-unit">
+                            <small id="message-unit-name" style=" display: none;">Some thing</small>
+                        </div>
+                    </div>
+                    <div class="form-unit">
+                        <div class="form-input-unit">
+                            <label for="image">Avartar: </label>
+                            <input type="file" id='image' class="input">
+                            <i class="icon-image" id='icon-status-name-unit'></i>
+                        </div>
+                        <!-- icont-success fas fa-check-circle -->
+                        <!-- <i class="icont-fail  fal fa-times-octagon"></i> -->
+                        <div class="message-image">
+                            <small id="message-image-name" style=" display: none;">Some thing</small>
+                        </div>
+                    </div>
+                </div>
+                <div class=" form-unit">
+                    <div class="form-input-unit">
+                        <label for="unit-Description"> Description:</label>
+                        <input type="text" id='unit-description' class="input" rows="2">
+                        <i class="icon-unit" id='icon-status-name-description'></i>
+                        <!-- icont-success fas fa-check-circle -->
+                        <!-- <i class="icont-fail  fal fa-times-octagon"></i> -->
+                    </div>
+                    <div class="message-unit">
+                        <small id="message-unit-description" style=" display: none;">Some thing</small>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <table id="vocabularies">
+                <tr>
+                    <th class='index'>#</th>
+                    <th>English</th>
+                    <th>Vietnamese</th>
+                    <th>spelling <small style="font-size:10px">(Can empty)</small></th>
+                    <th>Type vocabulary</th>
+                </tr>
+                <tbody id='tbody'>
+                    <!-- <tr>
+                        <td>
+                            <div class="form-input">
+                                
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-input">
+                                <input type="text" class="input">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-input">
+                                <input type="text" class="input">
+                            </div>
+
+                        </td>
+                        <td>
+                            <div class="form-input">
+                                <input type="text" class="input">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-input">
+                                <select class="input" name="" id="">
+                                <option value="1"> Danh từ</option>
+                                <option> Danh từ</option>
+                                <option> Danh từ</option>
+                                <option> Danh từ</option>
+                            </select>
+                            </div>
+                        </td>
+                        <td class="remove-row">
+                            <div>
+                                <i class="fad fa-trash"></i>
+                                 <i class="fad fa-trash-alt"></i> 
+                            </div>
+                        </td>
+                    </tr> -->
+                </tbody>
+            </table>
+            <div class="row">
+                <input type="submit" class="btn btn-add-row" value="Add row">
+                <input type="submit" class="btn btn-finish" id="btn-finish" value="Finish">
+            </div>
+        </div>
+        <div> <small id="message-table" style="color:red; "> </small></div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.auth0.com/js/auth0-spa-js/1.13/auth0-spa-js.production.js"></script>
+<script src="https://cdn.auth0.com/js/auth0/9.16.4/auth0.min.js"></script>
+<script src="./js/auth.js"></script>
+<!-- <script src="./js/main.js"></script> -->
+<script src="./js/createUnit.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</html>
